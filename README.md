@@ -23,7 +23,7 @@ Required:
         -f | --file-appimage <path>     full path of your appimage executable
 
 Options:
-        --no-sandbox yes            disable sandbox for appimage executable
+        --no-sandbox                disable sandbox for appimage executable
         -h | --help                 show this help message
 ```
 
