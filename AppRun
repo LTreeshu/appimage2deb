@@ -193,7 +193,7 @@ then
 else
 	config_edit "Icon" "/opt/durapps/a2d-packages/$A2DNAME/$A2DNAME.png" $A2DSEEDDESK/$A2DNAME.desktop
 fi
-config_edit "Name" "$A2DNAME" $A2DSEEDDESK/$A2DNAME.desktop
+#config_edit "Name" "$A2DNAME" $A2DSEEDDESK/$A2DNAME.desktop
 chmod +x $A2DSEEDDESK/$A2DNAME.desktop
 printf "%20s\n" "[ OK ]"
 
