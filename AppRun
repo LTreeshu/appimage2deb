@@ -82,6 +82,11 @@ case $key in
     shift # past argument
     shift # past value
     ;;
+    -d|--description)
+    A2DESC="$2"
+    shift # past argument
+    shift # past value
+    ;;
     -a|--arch)
     A2DARCH="$2"
     shift # past argument
@@ -149,6 +154,7 @@ echo "APPIMAGE        = ${A2DFILE}"
 echo "PACKAGE NAME    = ${A2DNAME}"
 echo "ARCHITECTURE    = ${A2DARCH}"
 echo "VERSION         = ${A2DVER}"
+echo "DESCRIPTIOR     = ${A2DESC}"
 echo "RANDOM SEED     = ${A2DSEED}"
 echo "********************************************************************************"
 echo ""
@@ -204,7 +210,7 @@ cat <<EOF > /tmp/$A2DSEED/DEBIAN/control
 Package: $A2DNAME
 Version: $A2DVER
 Architecture: $A2DARCH
-Description: 
+Description: $A2DESC
 Depends: 
 Maintainer: spark-store
 EOF
